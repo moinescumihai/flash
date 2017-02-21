@@ -39,7 +39,7 @@ if ( ! function_exists('flashInfo')) {
 if ( ! function_exists('flashSuccess')) {
 
     /**
-     * Arrange for an success flash message.
+     * Arrange for a success flash message.
      *
      * @param  string|null $message
      * @return \Laracasts\Flash\FlashNotifier
@@ -53,7 +53,7 @@ if ( ! function_exists('flashSuccess')) {
 if ( ! function_exists('flashWarning')) {
 
     /**
-     * Arrange for an success flash message.
+     * Arrange for a warning flash message.
      *
      * @param  string|null $message
      * @return \Laracasts\Flash\FlashNotifier
@@ -67,7 +67,7 @@ if ( ! function_exists('flashWarning')) {
 if ( ! function_exists('flashDanger')) {
 
     /**
-     * Arrange for an success flash message.
+     * Arrange for a danger flash message.
      *
      * @param  string|null $message
      * @return \Laracasts\Flash\FlashNotifier
