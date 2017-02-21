@@ -31,7 +31,13 @@ if ( ! function_exists('flashInfo')) {
      */
     function flashInfo($message = null)
     {
-        return flash($message, 'info');
+        $notifier = app('flash');
+
+        if ( ! is_null($message)) {
+            return $notifier->message($message, 'info');
+        }
+
+        return $notifier;
     }
 }
 
@@ -46,7 +52,13 @@ if ( ! function_exists('flashSuccess')) {
      */
     function flashSuccess($message = null)
     {
-        return flash($message, 'success');
+        $notifier = app('flash');
+
+        if ( ! is_null($message)) {
+            return $notifier->message($message, 'success');
+        }
+
+        return $notifier;
     }
 }
 
@@ -60,7 +72,13 @@ if ( ! function_exists('flashWarning')) {
      */
     function flashWarning($message = null)
     {
-        return flash($message, 'warning');
+        $notifier = app('flash');
+
+        if ( ! is_null($message)) {
+            return $notifier->message($message, 'warning');
+        }
+
+        return $notifier;
     }
 }
 
@@ -74,6 +92,12 @@ if ( ! function_exists('flashDanger')) {
      */
     function flashDanger($message = null)
     {
-        return flash($message, 'danger');
+        $notifier = app('flash');
+
+        if ( ! is_null($message)) {
+            return $notifier->message($message, 'danger');
+        }
+
+        return $notifier;
     }
 }
